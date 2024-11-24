@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\prestamos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\prestamos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\prestamos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\prestamos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\libros\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\libros\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\sanciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\sanciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Prestamos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prestamos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Prestamos\\Index.cshtml",
+              "RelativeToolTip": "Views\\Prestamos\\Index.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAawDMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T04:54:38.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrestamosController.cs",
+              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Controllers\\PrestamosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PrestamosController.cs",
+              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Controllers\\PrestamosController.cs",
+              "RelativeToolTip": "Controllers\\PrestamosController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T03:39:26.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LibrosController.cs",
+              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Controllers\\LibrosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LibrosController.cs",
+              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Controllers\\LibrosController.cs",
+              "RelativeToolTip": "Controllers\\LibrosController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T00:34:01.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Libros\\Create.cshtml",
+              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Create.cshtml",
+              "RelativeToolTip": "Views\\Libros\\Create.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:53:58.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Libros\\Index.cshtml",
+              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Index.cshtml",
+              "RelativeToolTip": "Views\\Libros\\Index.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:49:11.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Prestamos\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prestamos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Prestamos\\Create.cshtml",
+              "RelativeToolTip": "Views\\Prestamos\\Create.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwDQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T03:20:40.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Models\\Libro.cs",
+              "RelativeDocumentMoniker": "Models\\Libro.cs",
+              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Models\\Libro.cs",
+              "RelativeToolTip": "Models\\Libro.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:45:44.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Libros\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Libros\\Edit.cshtml",
+              "ViewState": "AgIAADgAAAAAAAAAAAAqwEoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:49:01.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Sanciones\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Sanciones\\Index.cshtml",
+              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Sanciones\\Index.cshtml",
+              "RelativeToolTip": "Views\\Sanciones\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T01:31:32.83Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

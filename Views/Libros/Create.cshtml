@@ -1,0 +1,116 @@
+﻿@model Biblioteca.Models.Libro
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Libro</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+  
+    <!--codigo 5 para foto poner enctype="multipart/form-data"-->
+        
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ISBN" class="control-label"></label>
+                <input asp-for="ISBN" class="form-control" />
+                <span asp-validation-for="ISBN" class="text-danger"></span>
+            </div>
+
+          @*   <div class="form-group"> borrar
+                <label asp-for="Rutaportada" class="control-label"></label>
+                <input asp-for="Rutaportada" class="form-control" />
+                <span asp-validation-for="Rutaportada" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+
+ <!--para foto-->
+                @* <label asp-for="Imagenportada" class="control-label"></label>
+                <input asp-for="Imagenportada" class="form-control" /> *@
+
+                <label asp-for="FotoFile" class="control-label"></label>
+                <input asp-for="FotoFile" class="form-control" />
+                <span asp-validation-for="FotoFile" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Ubicacion" class="control-label"></label>
+                <input asp-for="Ubicacion" class="form-control" />
+                <span asp-validation-for="Ubicacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ejemplares" class="control-label"></label>
+                <input asp-for="Ejemplares" class="form-control" />
+                <span asp-validation-for="Ejemplares" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <input asp-for="Estado" class="form-control" />
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fechareg" class="control-label"></label>
+                <input asp-for="Fechareg" class="form-control" />
+                <span asp-validation-for="Fechareg" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="form-group">
+    <!--para modificar label-->
+                <label asp-for="Autor" class="control-label"></label>
+     @* cargar datos           *@
+              <select asp-for="AutorId" class="form-control" asp-items="ViewBag.Autores">
+              <option value=""> Seleccione Autor</option>  
+              
+
+              </select>
+                <span asp-validation-for="AutorId" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Categoria" class="control-label"></label>
+<!--cargar datos llamar al filtro    -->
+                <select asp-for="CategoriaId" class="form-control" asp-items="ViewBag.Categorias">
+                    <option value=""> Seleccione Categoria</option>
+
+                </select>
+                @* <input asp-for="CategoriaId" class="form-control" /> *@
+                <span asp-validation-for="CategoriaId" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Editorial" class="control-label"></label>
+                <!--llamar al filtro  "EditorialId"  -->
+                <select asp-for="EditorialId" class=" form-control" asp-items="ViewBag.Editoriales">
+                <option value="">Seleccione Editorial</option>
+
+                </select>
+                @* <input asp-for="EditorialId" class="form-control" /> *@
+                <span asp-validation-for="EditorialId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+<!--copiar esta linea de codigo de layout paso 1--> 
+   <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+<div class="container">
+
+        <div class="row">
+            <!--columna 1-->
+            <div class="col-6">
+                imagen
+            </div>
+            <!--columna 2-->
+            <div class="col-6">
+
+                <!--pegar codigo para el formulario de login -->
+                <form asp-controller="Login" asp-action="Login" method="post">
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Usuario Email</label>
+           <!--el name tiene k coincidir con el valor que esta recibiendo la clase login controller en la funcion Login-->
+                        <input type="email" class="form-control" id="usuario" name="correo">
+                        <div id="emailHelp" class="form-text"> no compartiremos tu informaion con nadie.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                  
+                    <button type="submit" class="btn btn-primary">ingresar</button>
+                </form>
+
+
+
+            </div>
+        </div>
+</div>
+
+ <!--copiar estas dos linea de codigo de layout paso 2-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
