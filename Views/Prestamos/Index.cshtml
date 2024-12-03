@@ -4,62 +4,108 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Prestamitos</h1>
+<div class="row">
+    <div class="col col-3">
+        <h1>Prestamos</h1>
+    </div>
+    <div class="col auto">
+        @if (User.IsInRole("Administrador") || User.IsInRole("Usuario"))
+        {
+            <p>
+                <a class="btn btn-outline-success outline" asp-action="Create">Create New</a>
+            </p>
+        }
+        @if (User.IsInRole("Lector"))
+        {
+            <p>
+                <a class="btn btn-outline-success" asp-action="CrearReserva">Crear Reserva</a>
+            </p>
+        }
+    </div>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Fechaprestamo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Fechadevolucion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaConfirmacion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LibroId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PersonaId)
-            </th>
-            <th></th>
+            <th>Codigo</th>
+            <th>Fecha de solicitud</th>
+            <th>Fecha de prestamo</th>
+            <th>Fecha de devolucion</th>
+            <th>@Html.DisplayNameFor(model => model.Estado)</th>
+            <th>Libro</th>
+            @if (User.IsInRole("Administrador") || User.IsInRole("Usuario"))
+            {
+                <th>Lector</th>
+            }
+            <th>Opciones</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fechaprestamo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fechadevolucion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaConfirmacion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LibroId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PersonaId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            string rowClass = item.Estado switch
+            {
+                "PENDIENTE" => "table-warning",
+                "PRESTADO" => "table-info",
+                "DEVUELTO" => "table-success",
+                "SANCION" => "table-danger",
+                _ => ""
+            };
+            
+            <tr class="@rowClass">
+                <th>@item.Id</th>
+                <td>@Html.DisplayFor(modelItem => item.Fechaprestamo)</td>
+                <td>
+                    @if (item.Estado == "PENDIENTE")
+                    {
+                        <p>-</p>
+                    }
+                    else
+                    {
+                        <p>@item.FechaConfirmacion</p>
+                    }
+                </td>
+                <td>
+                    @if (item.Estado == "PENDIENTE" || item.Estado == "PRESTADO")
+                    {
+                        <p>-</p>
+                    }
+                    else
+                    {
+                        <p>@item.Fechadevolucion</p>
+                    }
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.Estado)</td>
+                <td>@Html.DisplayFor(modelItem => item.Libro!.Titulo)</td>
+                @if (User.IsInRole("Administrador") || User.IsInRole("Usuario"))
+                {
+                    <td>@Html.DisplayFor(modelItem => item.Persona!.NombreCompleto)</td>
+                    
+                }
+                <td>
+                    @if(User.IsInRole("Administrador") || User.IsInRole("Usuario")) {
+                        @if(item.Estado == "PENDIENTE") {
+                            <button class="btn btn-outline-info" data-toggle="tooltip" data-placement="top" title="Confirmar prestamo" asp-action="Edit" asp-route-id="@item.Id">
+                                <i class="bi bi-check"></i>
+                            </button>
+                        }
+                        @if(item.Estado == "PRESTADO") {
+                            <button class="btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Confirmar devolucion" asp-action="Edit" asp-route-id="@item.Id">
+                                <i class="bi bi-check-all"></i>
+                            </button>
+                            <button class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Crear sancion" asp-action="Edit" asp-route-id="@item.Id">
+                                <i class="bi bi-ban"></i>
+                            </button>
+                        }
+                    }
+                    @if(item.Estado == "PENDIENTE") {
+                        <button class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Cancelar prestamo" asp-action="Delete" asp-route-id="@item.Id">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    }
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

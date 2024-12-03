@@ -1,0 +1,42 @@
+@using System.Security.Claims
+@model Biblioteca.Dto.CrearReserva;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Reservar Libro</h1>
+
+<h2>@Model.Libro!.Titulo</h2>
+
+<div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col col-6">
+                <div class="card">
+                    <h3>Autor: <strong>@Model.Libro!.Autor!.Nombre</strong></h3>
+                    <br>
+                    <h4>Editorial: <strong>@Model.Libro!.Editorial!.Nombre</strong></h4>
+                    <br>
+                    <h4>Categoria: <strong>@Model.Libro!.Categoria!.Nombre</strong></h4>
+                    <br>
+                    <h5>ISBN: <strong>@Model.Libro!.ISBN</strong></h5>
+                    <br>
+                    <h5>Ejemplares: <strong>@Model.Libro!.Ejemplares</strong></h5>
+                </div>
+            </div>
+            <div class="col col-6">
+                <img style="max-width: 40rem; height: auto; border-radius: 10%;" src="/imgPortada/@Model.Libro!.Rutaportada" alt=""/>
+            </div>
+        </div>
+        <form asp-action="Reservar" asp-controller="Prestamos" method="post">
+            <input name="LibroId" value="@Model.Libro.Id" type="hidden">
+            <input name="PersonaId" value="@User.FindFirstValue(ClaimTypes.NameIdentifier)" type="hidden">
+
+            <div class="row">
+                <div class="col-auto">        
+                    <a asp-action="Index" asp-controller="Libros" class="btn btn-secondary">Cancelar</a>
+                    <button type="submit" class="btn btn-success">Reservar Libro</button>
+                </div>
+            </div>
+        </form>
+</div>

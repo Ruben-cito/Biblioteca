@@ -1,4 +1,8 @@
-﻿using Biblioteca.Contexto;
+﻿using System.Security.Claims;
+using Biblioteca.Contexto;
+using Biblioteca.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic;
@@ -42,24 +46,34 @@ namespace Biblioteca.Controllers
             }
             else
             {
+                await SetUserCookie(Persona);
                 if (Persona.Cargo == Dto.CargoEnum.Administrador)
-                { 
                     return RedirectToAction("Index", "Libros");
-                }
-                else 
-                {
-                    if (Persona.Cargo == Dto.CargoEnum.Usuario)
-                    { 
-                        return RedirectToAction("index", "Datos");
-                    }
-                    else
-                    {
-                        return RedirectToAction("index", "Libros");
-                    }
-                }
-            
+                else if (Persona.Cargo == Dto.CargoEnum.Usuario)
+                    return RedirectToAction("index", "Datos");
+                else
+                    return RedirectToAction("Index", "Libros", new { id = Persona.Id });    
             }
         }   
+        private async Task SetUserCookie(Persona usuario)
+        {
+            var claims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.Name, usuario!.Nombre!),
+                new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+                new Claim(ClaimTypes.Role, usuario.Cargo!.ToString())
+            };
+
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index", "Login");
+        }
+
      
     }
 }

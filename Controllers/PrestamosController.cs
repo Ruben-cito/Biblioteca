@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Biblioteca.Contexto;
 using Biblioteca.Models;
+using Biblioteca.Dto;
+using System.Security.Claims;
 
 
 namespace Biblioteca.Controllers
@@ -26,10 +28,22 @@ namespace Biblioteca.Controllers
            //var libros = await _context.Libros.Include(p => p.Id).ToListAsync();
            // Console.WriteLine(libros);
            // var personas = await _context.Personas.Include(p => p.Nombre).Include(p => p.Paterno).Include(p => p.Materno).ToListAsync();
+            if(User.IsInRole("Lector")) {
+                var id = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+                var prestamosLector = await _context.Prestamos
+                    .Include(p => p.Libro)
+                    .Include(p => p.Persona)
+                    .Where(p => p.PersonaId == id)
+                    .ToListAsync();
+                return View(prestamosLector);
+            }
+            else
 
-            return View(await _context.Prestamos.ToListAsync());
-
-            //return View(libros);
+            return View(await _context.Prestamos
+                .Include(p => p.Libro)
+                .Include(p => p.Persona)
+                .ToListAsync()
+            );
         }
 
         // GET: Prestamos/Details/5
@@ -77,6 +91,22 @@ namespace Biblioteca.Controllers
             return View(prestamo);
         }
 
+        [HttpPost("Prestamos/Reservar")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Reservar(int LibroId, int PersonaId)
+        {
+            var prestamo = new Prestamo();
+            prestamo.LibroId = LibroId;
+            prestamo.PersonaId = PersonaId;
+            prestamo.Estado = "PENDIENTE";
+            prestamo.Fechaprestamo = DateTime.Now;
+            prestamo.Fechadevolucion = DateTime.Now;
+            prestamo.FechaConfirmacion = DateTime.Now;
+            _context.Add(prestamo);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", "Libros");
+        }
+
         // GET: Prestamos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -91,6 +121,30 @@ namespace Biblioteca.Controllers
                 return NotFound();
             }
             return View(prestamo);
+        }
+
+        // GET: Prestamos/Edit/5
+        public async Task<IActionResult> CrearReserva(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var libro = await _context.Libros
+                .Include(x => x.Autor)
+                .Include(x => x.Editorial)
+                .Include(x => x.Categoria)
+                .FirstOrDefaultAsync(x => x.Id == id);
+            if (libro == null)
+            {
+                return NotFound();
+            }
+            var model = new CrearReserva() {
+                Libro = libro,
+                Prestamo = new Prestamo()
+            };
+            return View(model);
         }
 
         // POST: Prestamos/Edit/5

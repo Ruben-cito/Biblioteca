@@ -3,13 +3,135 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Biblioteca</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Biblioteca.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para la barra lateral */
+        #sidebarMenu {
+            background-color: #343a40;
+            min-height: 100vh;
+        }
+
+            #sidebarMenu .nav-link {
+                color: #adb5bd;
+            }
+
+                #sidebarMenu .nav-link.active,
+                #sidebarMenu .nav-link:hover {
+                    color: #fff;
+                    background-color: #495057;
+                }
+
+                #sidebarMenu .nav-link i {
+                    margin-right: 10px;
+                }
+
+        /* Ajuste de márgenes */
+        .content-wrapper {
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Barra lateral izquierda -->
+            
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                <div class="position-sticky">
+                    <h5 class="text-light p-3">Biblioteca SIS-INF</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+
+                            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door"></i> Home
+                            </a>
+                        </li>
+                        @if(User.IsInRole("Administrador"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Autores" asp-action="Index">
+                                    <i class="bi bi-people"></i> Autores
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Categorias" asp-action="Index">
+                                    <i class="bi bi-grid"></i> Categoria
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Editoriales" asp-action="Index">
+                                    <i class="bi bi-journal-richtext"></i> Editorial
+                                </a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Libros" asp-action="Index">
+                                <i class="bi bi-book"></i> Libros
+                            </a>
+                        </li>
+                        @if(User.IsInRole("Administrador") || User.IsInRole("Usuario"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Personas" asp-action="Index">
+                                    <i class="bi bi-people"></i> Personas
+                                </a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Prestamos" asp-action="Index">
+                                <i class="bi bi-arrow-left-right"></i> Prestamos 
+                            </a>
+                        </li>
+                    </ul>
+
+                    <hr>
+                    <div class="nav flex-column p-3 text-light">
+                        <span class="navbar-text">
+                            <i class="bi bi-person-circle"></i> @User.Identity!.Name
+                        </span>
+                        <a class="nav-link text-danger" asp-controller="Login" asp-action="Logout">
+                            <i class="bi bi-box-arrow-right"></i> Salir
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+            
+            <!-- Contenido principal -->
+            <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 content-wrapper">
+                
+
+                <main role="main" class="pt-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Sindicato_Mejillones - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <!-- Archivos JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    @* <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Biblioteca</a>
@@ -25,11 +147,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-<!-- llamar cal controlar -->
-                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Datos" asp-action="Index">Datos</a>
-                        </li>
-<!--llamar a las pantalla de Views a toda la carpeta Autores -->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Autores" asp-action="Index">Autores</a>
                         </li>
@@ -71,6 +188,6 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("Scripts", required: false) *@
 </body>
 </html>

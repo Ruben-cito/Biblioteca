@@ -22,7 +22,7 @@ namespace Biblioteca.Controllers
         // GET: Autores
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Datos.ToListAsync());
+            return View(await _context.Datos.Where(a => a.Tipo == Dto.TipoDatoDto.Autor).ToListAsync());
         }
 
         // GET: Autores/Details/5

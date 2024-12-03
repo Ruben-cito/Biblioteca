@@ -72,6 +72,22 @@ namespace Biblioteca.Controllers
             return View(persona);
         }
 
+        // Home Lector
+        public async Task<IActionResult> LectorHome(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var persona = await _context.Personas.FindAsync(id);
+            if (persona == null)
+            {
+                return NotFound();
+            }
+            return View(persona);
+        }
+        
         // GET: Personas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {

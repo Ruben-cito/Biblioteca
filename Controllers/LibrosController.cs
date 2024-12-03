@@ -70,7 +70,7 @@ namespace Biblioteca.Controllers
             ViewData["Autores"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Autor), "Id", "Nombre");
             ViewData["Categorias"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Categoria), "Id", "Nombre");
             ViewData["Editoriales"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Editorial), "Id", "Nombre");
-            return View();
+            return View("Create");
         }
 
         // POST: Libros/Create
@@ -140,6 +140,10 @@ namespace Biblioteca.Controllers
             {
                 return NotFound();
             }
+            ViewData["Autores"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Autor), "Id", "Nombre");
+            ViewData["Categorias"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Categoria), "Id", "Nombre");
+            ViewData["Editoriales"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Editorial), "Id", "Nombre");
+            
             return View(libro);
         }
 

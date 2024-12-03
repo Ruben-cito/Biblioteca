@@ -1,41 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\",
+  "WorkspaceRootPath": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\views\\autores\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\autores\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\models\\dato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:models\\dato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\prestamos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\views\\prestamos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\prestamos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\prestamos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\views\\prestamos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\prestamos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\libros\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\views\\libros\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\libros\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\luzes\\onedrive\\escritorio\\proybiblioteca\\biblioteca\\views\\sanciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|c:\\users\\codexd\\desktop\\mio\\projects\\biblioteca\\views\\sanciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7EA2AB74-E2CC-4DF7-918C-85E5F1A93A81}|Biblioteca.csproj|solutionrelative:views\\sanciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -46,93 +54,114 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Prestamos\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Prestamos\\Index.cshtml",
-              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Prestamos\\Index.cshtml",
-              "RelativeToolTip": "Views\\Prestamos\\Index.cshtml",
-              "ViewState": "AgIAACAAAAAAAAAAAAAawDMAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Autores\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Autores\\Create.cshtml",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Autores\\Create.cshtml",
+              "RelativeToolTip": "Views\\Autores\\Create.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T04:54:38.67Z",
+              "WhenOpened": "2024-12-01T01:52:20.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Dato.cs",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Models\\Dato.cs",
+              "RelativeDocumentMoniker": "Models\\Dato.cs",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Models\\Dato.cs",
+              "RelativeToolTip": "Models\\Dato.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T01:51:54.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Prestamos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prestamos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Prestamos\\Index.cshtml",
+              "RelativeToolTip": "Views\\Prestamos\\Index.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAawDMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T04:54:38.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PrestamosController.cs",
-              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Controllers\\PrestamosController.cs",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Controllers\\PrestamosController.cs",
               "RelativeDocumentMoniker": "Controllers\\PrestamosController.cs",
-              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Controllers\\PrestamosController.cs",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Controllers\\PrestamosController.cs",
               "RelativeToolTip": "Controllers\\PrestamosController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T03:39:26.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "LibrosController.cs",
-              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Controllers\\LibrosController.cs",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Controllers\\LibrosController.cs",
               "RelativeDocumentMoniker": "Controllers\\LibrosController.cs",
-              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Controllers\\LibrosController.cs",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Controllers\\LibrosController.cs",
               "RelativeToolTip": "Controllers\\LibrosController.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAQwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T00:34:01.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T00:34:01.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Libros\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Libros\\Create.cshtml",
-              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Create.cshtml",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Libros\\Create.cshtml",
               "RelativeToolTip": "Views\\Libros\\Create.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAGQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T01:53:58.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Libros\\Index.cshtml",
-              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Index.cshtml",
-              "RelativeToolTip": "Views\\Libros\\Index.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T01:49:11.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Prestamos\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Prestamos\\Create.cshtml",
-              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Prestamos\\Create.cshtml",
-              "RelativeToolTip": "Views\\Prestamos\\Create.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAqwDQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T03:20:40.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T01:53:58.505Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Libros\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Libros\\Index.cshtml",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Libros\\Index.cshtml",
+              "RelativeToolTip": "Views\\Libros\\Index.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:49:11.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Prestamos\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prestamos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Prestamos\\Create.cshtml",
+              "RelativeToolTip": "Views\\Prestamos\\Create.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwDQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T03:20:40.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Libro.cs",
-              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Models\\Libro.cs",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Models\\Libro.cs",
               "RelativeDocumentMoniker": "Models\\Libro.cs",
-              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Models\\Libro.cs",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Models\\Libro.cs",
               "RelativeToolTip": "Models\\Libro.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAkwCwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -140,11 +169,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Libros\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Libros\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Libros\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Libros\\Edit.cshtml",
               "RelativeToolTip": "Views\\Libros\\Edit.cshtml",
               "ViewState": "AgIAADgAAAAAAAAAAAAqwEoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -152,11 +181,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Sanciones\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Sanciones\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Sanciones\\Index.cshtml",
-              "ToolTip": "C:\\Users\\luzes\\OneDrive\\Escritorio\\PROYBIBLIOTECA\\Biblioteca\\Views\\Sanciones\\Index.cshtml",
+              "ToolTip": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\Views\\Sanciones\\Index.cshtml",
               "RelativeToolTip": "Views\\Sanciones\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

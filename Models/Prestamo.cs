@@ -22,8 +22,5 @@ namespace Biblioteca.Models
         public int? PersonaId { get; set; }
         public virtual Persona? Persona { get; set; }
 
-
-
-
     }
 }

@@ -37,6 +37,8 @@ namespace Biblioteca.Models
         [Required]
         public int Intentos { get; set; }
 
+        [NotMapped]
+        public string? NombreCompleto { get { return $"{Paterno} {Materno} {Nombre}"; } }
 
         public virtual List<Prestamo>? Prestamos { get; set; }
         public virtual List<Sancion>? Sanciones { get; set; }
