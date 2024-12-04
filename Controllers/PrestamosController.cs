@@ -207,7 +207,7 @@ namespace Biblioteca.Controllers
             {
                 return NotFound();
             }
-            prestamo.Fechaprestamo = DateTime.Now;
+            prestamo.FechaConfirmacion = DateTime.Now;
             prestamo.Estado = "PRESTADO";
             var libro = await _context.Libros.FindAsync(prestamo.LibroId);
             libro.Ejemplares = libro.Ejemplares - 1;

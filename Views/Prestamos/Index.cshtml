@@ -69,13 +69,16 @@
                     }
                 </td>
                 <td>
-                    @if (item.Estado == "RESERVADO" || item.Estado == "PRESTADO")
+                    @if (item.Estado == "PRESTADO")
                     {
                         <p>@item.DiasDesdePrestamo dias</p>
                     }
-                    else
+                    else if(item.Estado == "DEVUELTO")
                     {
                         <p>@item.Fechadevolucion</p>
+                    }
+                    else {
+                        <p>-</p>
                     }
                 </td>
                 <td>@Html.DisplayFor(modelItem => item.Estado)</td>

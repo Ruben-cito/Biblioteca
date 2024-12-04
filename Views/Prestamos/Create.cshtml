@@ -42,33 +42,6 @@
     </div>
 </form>
 
-<!-- @section Scripts {
+@section Scripts {
 
-    <script>
-        $(document).ready(function () {
-            $('#PersonaId').change(function () {
-                var lectorId = $(this).val();
-                if (lectorId) {
-                    $.ajax({
-                        url: '@Url.Action("ObtenerLector", "Prestamos")',
-                        type: 'GET',
-                        data: { id: lectorId },
-                        success: function (data) {
-                            console.log("llegue aqui")
-                            // Actualiza los datos del lector en la interfaz
-                            $('#lectorNombre').text(data.NombreCompleto || 'N/A');
-                            $('#lectorCi').text(data.Codigo || 'N/A');
-                        },
-                        error: function () {
-                            alert('No se pudieron obtener los datos del lector.');
-                        }
-                    });
-                } else {
-                    // Limpia los datos si no hay lector seleccionado
-                    $('#lectorNombre').text('');
-                    $('#lectorCi').text('');
-                }
-            });
-        });
-    </script>
-} -->
+}
