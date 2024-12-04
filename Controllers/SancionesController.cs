@@ -67,6 +67,24 @@ namespace Biblioteca.Controllers
             return View(model);
         }
 
+        [HttpPost("Sanciones/Crear")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Crear(int PrestamoId, int PersonaId, string motivo, int monto)
+        {
+            var sancion = new Sancion() {
+                Montototal = monto,
+                Motivo = motivo,
+                PrestamoId = PrestamoId,
+                PersonaId = PersonaId
+            };
+            var prestamo = await _context.Prestamos.FindAsync(PrestamoId);
+            prestamo!.Estado = "SANCION";
+            _context.Update(prestamo);
+            _context.Add(sancion);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", "Prestamos");
+        }
+
         // GET: Sanciones/Create
         public IActionResult Create()
             // ViewData["Prestamos"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.), "Id", "Nombre");

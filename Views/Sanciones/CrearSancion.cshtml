@@ -28,20 +28,22 @@
                 <h4>Tiempo de prestamo: <strong>@Model.Prestamo.DiasDesdePrestamo dias</strong></h4>
             </div>
         </div>
-        <form action="">
+        <form asp-action="Crear" method="post">
             <div class="row p-2">
                 <div class="col col-8">
                     <label for="">Motivo de sancion</label>
-                    <input class="form-control" type="text">
+                    <input name="motivo" class="form-control" type="text">
                 </div>
+                <input type="hidden" name="PrestamoId" value="@Model.Prestamo!.Id">
+                <input type="hidden" name="PersonaId" value="@Model.Prestamo.Persona.Id">
                 <div class="col col-4">
                     <label for="">Monto de sancion</label>
-                    <input class="form-control" type="text">
+                    <input name="monto" class="form-control" type="text">
                 </div>
             </div>
             <div class="row p-2">
                 <div class="col auto d-flex justify-content-end">
-                    <button class="btn btn-primary">Crear sancion</button>
+                    <button type="submit" class="btn btn-primary">Crear sancion</button>
                 </div>
             </div>
         </form>
