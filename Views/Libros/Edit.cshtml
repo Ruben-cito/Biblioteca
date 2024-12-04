@@ -8,9 +8,10 @@
 <div class="row justify-content-center">
     <div class="col col-8">
 
-        <form asp-action="Create" enctype="multipart/form-data">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div class="row">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
                     <div class="form-group">
                         <label asp-for="Titulo" class="control-label"></label>
                         <input asp-for="Titulo" class="form-control" />
@@ -64,20 +65,10 @@
                             <span asp-validation-for="Ejemplares" class="text-danger"></span>
                         </div>
                     </div>
-                    <div class="col-6">    
-                        <div class="form-group">
-                            <label asp-for="Fechareg" class="control-label"></label>
-                            <input asp-for="Fechareg" class="form-control" />
-                            <span asp-validation-for="Fechareg" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="form-group">
-                            <label asp-for="Estado" class="control-label"></label>
-                            <input asp-for="Estado" class="form-control" />
-                            <span asp-validation-for="Estado" class="text-danger"></span>
-                        </div>
-                    </div>
+                    
+                    <input type="hidden" asp-for="Fechareg" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")" />
+                    <input type="hidden" asp-for="Estado" class="form-control" value="Activo" />
+                    
                     <div class="form-group">
                         <label asp-for="FotoFile" class="control-label"></label>
                         <input asp-for="FotoFile" class="form-control" />

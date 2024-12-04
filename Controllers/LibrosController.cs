@@ -15,21 +15,12 @@ namespace Biblioteca.Controllers
     {
                 
         private readonly MyContext _context;
-
-
-        //codigo para foto 3
        
         private readonly IWebHostEnvironment _webHostEnvironment;
-
-
-
-        // codigo para fotos 4                    ,IWebHostEnvironment webHostEnvironment
 
         public LibrosController(MyContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
-
-        //codigo para foto 5 inicializar
 
             _webHostEnvironment = webHostEnvironment;
         }
@@ -70,7 +61,10 @@ namespace Biblioteca.Controllers
             ViewData["Autores"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Autor), "Id", "Nombre");
             ViewData["Categorias"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Categoria), "Id", "Nombre");
             ViewData["Editoriales"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Editorial), "Id", "Nombre");
-            return View("Create");
+            var model = new Libro() {
+                Fechareg = DateTime.Now
+            };
+            return View(model);
         }
 
         // POST: Libros/Create
@@ -78,23 +72,15 @@ namespace Biblioteca.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-
-        //public async Task<IActionResult> Create([Bind("Id,Titulo,ISBN,Imagenportada,Ubicacion,Ejemplares,Estado,Fechareg,AutorId,CategoriaId,EditorialId")] Libro libro)
-        public async Task<IActionResult> Create([Bind("Titulo,ISBN,FotoFile,Ubicacion,Ejemplares,Estado,Fechareg,AutorId,CategoriaId,EditorialId")] Libro libro)
+        public async Task<IActionResult> Create([Bind("Id,Rutaportada,Estado,Titulo,ISBN,FotoFile,Ubicacion,Fechareg,Ejemplares,AutorId,CategoriaId,EditorialId")] Libro libro)
         {
-            
-
             if (ModelState.IsValid)
             {
-                //codigo para foto 1
-                Console.WriteLine("subir archivo");
-
                 if (libro.FotoFile!=null)
-                {
-                 
+                { 
                     await subirArchivo(libro);
                 }
-
+                
                 _context.Add(libro);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -116,7 +102,7 @@ namespace Biblioteca.Controllers
 
 
 // guardar el nombre del archivo sera en el campo imagenportada en la tabla osea el el models atributo imagenportada
-        libro.Rutaportada=nombreArchivo;
+            libro.Rutaportada=nombreArchivo;
 
             //guardar la foto en roo en la carpeta imgPortada mas el nombrearchivo
 
@@ -143,7 +129,9 @@ namespace Biblioteca.Controllers
             ViewData["Autores"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Autor), "Id", "Nombre");
             ViewData["Categorias"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Categoria), "Id", "Nombre");
             ViewData["Editoriales"] = new SelectList(_context.Datos.Where(D => D.Tipo == Dto.TipoDatoDto.Editorial), "Id", "Nombre");
-            
+            var model = new Libro() {
+                Fechareg = DateTime.Now
+            };
             return View(libro);
         }
 
@@ -152,7 +140,7 @@ namespace Biblioteca.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Titulo,ISBN,Rutaportada,Imagenportada,Ubicacion,Ejemplares,Estado,Fechareg,AutorId,CategoriaId,EditorialId")] Libro libro)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Titulo,ISBN,Rutaportada,FotoFile,Ubicacion,Ejemplares,Estado,Fechareg,AutorId,CategoriaId,EditorialId")] Libro libro)
         {
             if (id != libro.Id)
             {
@@ -163,6 +151,10 @@ namespace Biblioteca.Controllers
             {
                 try
                 {
+                    if (libro.FotoFile!=null)
+                    { 
+                        await subirArchivo(libro);
+                    }
                     _context.Update(libro);
                     await _context.SaveChangesAsync();
                 }

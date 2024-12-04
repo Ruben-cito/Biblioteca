@@ -28,12 +28,12 @@
             
             <div class="card" style="width: 18rem;">
             
-                <img class="card-img-top" style="max-width: 18rem; height: auto;" src="/imgPortada/@Html.DisplayFor(Modelitem=>item.Rutaportada)" alt="Card image cap">
-                <h3>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-@item.Id" aria-expanded="false" aria-controls="collapse-@item.Id">
-                        @item.Titulo
-                    </button>
-                </h3>
+                <img class="card-img-top" style="max-width: 18rem; height: 26rem;" src="/imgPortada/@Html.DisplayFor(Modelitem=>item.Rutaportada)" alt="Card image cap">
+                
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-@item.Id" aria-expanded="false" aria-controls="collapse-@item.Id">
+                    @item.Titulo
+                </button>
+                
                 <div class="collapse" id="collapse-@item.Id">
                     <div class="card-body">
                         <h6 class="card-title">Registro: <em>@item.Fechareg</em></h6>

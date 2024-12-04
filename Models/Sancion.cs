@@ -14,9 +14,10 @@ namespace Biblioteca.Models
         public string? Motivo { get; set; }
 
         public int PersonaId { get; set; }
-        public int Idprestamo { get; set; }
-
         public virtual Persona? Persona { get; set; }
+        
+        public int PrestamoId { get; set; }
+
         public virtual Prestamo? Prestamo { get; set; }
     }
 }

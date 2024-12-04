@@ -86,17 +86,23 @@
                 <td>
                     @if(User.IsInRole("Administrador") || User.IsInRole("Usuario")) {
                         @if(item.Estado == "PENDIENTE") {
-                            <button class="btn btn-outline-info" data-toggle="tooltip" data-placement="top" title="Confirmar prestamo" asp-action="Edit" asp-route-id="@item.Id">
-                                <i class="bi bi-check"></i>
-                            </button>
+                            <form asp-action="ConfirmarPrestamo" asp-controller="Prestamos" method="post">
+                                <input name="id" value="@item.Id" type="hidden">
+                                <button type="submit" class="btn btn-outline-info" data-toggle="tooltip" data-placement="top" title="Confirmar prestamo">
+                                    <i class="bi bi-check"></i>
+                                </button>
+                            </form>
                         }
                         @if(item.Estado == "PRESTADO") {
-                            <button class="btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Confirmar devolucion" asp-action="Edit" asp-route-id="@item.Id">
-                                <i class="bi bi-check-all"></i>
-                            </button>
-                            <button class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Crear sancion" asp-action="Edit" asp-route-id="@item.Id">
+                            <form asp-action="ConfirmarDevolucion" asp-controller="Prestamos" method="post">
+                                <input name="id" value="@item.Id" type="hidden">
+                                <button type="submit" class="btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Confirmar devolucion">
+                                    <i class="bi bi-check-all"></i>
+                                </button>
+                            </form>
+                            <a asp-action="CrearSancion" asp-controller="Sanciones" asp-route-id="@item.Id" class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Crear sancion">
                                 <i class="bi bi-ban"></i>
-                            </button>
+                            </a>
                         }
                     }
                     @if(item.Estado == "PENDIENTE") {

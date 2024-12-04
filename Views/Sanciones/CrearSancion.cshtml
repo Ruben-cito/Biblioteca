@@ -1,0 +1,49 @@
+@using System.Security.Claims
+@model Biblioteca.Dto.CrearSancion;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Model.Prestamo!.Libro!.Titulo</h1>
+
+<div class="row">
+    <div class="col col3 d-flex justify-content-around">
+        <img  style="max-width: 15rem; height: 20rem;" src="/imgPortada/@Model.Prestamo.Libro.Rutaportada" alt="">
+    </div>
+    <div class="col col-8">
+        <div class="row p-2">
+            <div class="col col-6">
+                <h4>Lector: <strong>@Model.Prestamo.Persona!.NombreCompleto</strong></h4>
+            </div>
+            <div class="col col-6">
+                <h4>Autor: <strong>@Model.Prestamo.Libro!.Autor!.Nombre</strong></h4>
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="col col-6">
+                <h4>Fecha de prestamo: <code>@Model.Prestamo.Fechaprestamo</code></h4>
+            </div>
+            <div class="col col-6">
+                <h4>Tiempo de prestamo: <strong>@Model.Prestamo.DiasDesdePrestamo dias</strong></h4>
+            </div>
+        </div>
+        <form action="">
+            <div class="row p-2">
+                <div class="col col-8">
+                    <label for="">Motivo de sancion</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="col col-4">
+                    <label for="">Monto de sancion</label>
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col auto d-flex justify-content-end">
+                    <button class="btn btn-primary">Crear sancion</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Biblioteca.Contexto;
 using Biblioteca.Models;
+using Biblioteca.Dto;
 
 namespace Biblioteca.Controllers
 {
@@ -41,6 +42,29 @@ namespace Biblioteca.Controllers
             }
 
             return View(sancion);
+        }
+
+        public async Task<IActionResult> CrearSancion(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var prestamo = await _context.Prestamos
+                .Include(x => x.Libro)
+                .Include(x => x.Libro!.Autor)
+                .Include(x => x.Persona)
+                .FirstOrDefaultAsync(x => x.Id == id);
+            if (prestamo == null)
+            {
+                return NotFound();
+            }
+            var model = new CrearSancion() {
+                Prestamo = prestamo,
+                Sancion = new Sancion()
+            };
+            return View(model);
         }
 
         // GET: Sanciones/Create

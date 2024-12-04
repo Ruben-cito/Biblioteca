@@ -22,5 +22,13 @@ namespace Biblioteca.Models
         public int? PersonaId { get; set; }
         public virtual Persona? Persona { get; set; }
 
+        [NotMapped]
+        public int DiasDesdePrestamo 
+        {
+            get
+            {
+                return (DateTime.Now - Fechaprestamo).Days;
+            }
+        }
     }
 }

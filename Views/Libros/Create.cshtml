@@ -67,25 +67,17 @@
                             <span asp-validation-for="Ejemplares" class="text-danger"></span>
                         </div>
                     </div>
-                    <div class="col-6">    
-                        <div class="form-group">
-                            <label asp-for="Fechareg" class="control-label"></label>
-                            <input asp-for="Fechareg" class="form-control" />
-                            <span asp-validation-for="Fechareg" class="text-danger"></span>
-                        </div>
-                    </div>
+                    <input type="hidden" asp-for="Fechareg" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")" />
+                    <input type="hidden" asp-for="Estado" class="form-control" value="Activo" />
+                    
                     <div class="col-6">
                         <div class="form-group">
-                            <label asp-for="Estado" class="control-label"></label>
-                            <input asp-for="Estado" class="form-control" />
-                            <span asp-validation-for="Estado" class="text-danger"></span>
+                            <label asp-for="FotoFile" class="control-label"></label>
+                            <input asp-for="FotoFile" class="form-control" />
+                            <span asp-validation-for="FotoFile" class="text-danger"></span>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label asp-for="FotoFile" class="control-label"></label>
-                        <input asp-for="FotoFile" class="form-control" />
-                        <span asp-validation-for="FotoFile" class="text-danger"></span>
-                    </div>
+                    
                     
                     <div class="form-group d-flex justify-content-end">
                         <a class="btn btn-secondary" asp-action="Index">Regresar</a>

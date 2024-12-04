@@ -147,6 +147,52 @@ namespace Biblioteca.Controllers
             return View(model);
         }
 
+        // Confirmar devolucion
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ConfirmarDevolucion(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var prestamo = await _context.Prestamos
+                .FindAsync(id);
+            if (prestamo == null)
+            {
+                return NotFound();
+            }
+            prestamo.Fechadevolucion = DateTime.Now;
+            prestamo.Estado = "DEVUELTO";
+            _context.Update(prestamo);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", "Prestamos");
+        }
+
+        // Confirmar prestamo
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ConfirmarPrestamo(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var prestamo = await _context.Prestamos
+                .FindAsync(id);
+            if (prestamo == null)
+            {
+                return NotFound();
+            }
+            prestamo.Fechaprestamo = DateTime.Now;
+            prestamo.Estado = "PRESTADO";
+            _context.Update(prestamo);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", "Prestamos");
+        }
+
         // POST: Prestamos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
