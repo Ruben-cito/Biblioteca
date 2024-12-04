@@ -1,296 +1,300 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteca.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Biblioteca.bundle.scp.css"
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteca.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Biblioteca.vvc0sk6swu.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\13feb7ee-fbca-4120-bd92-005bf926c7d1.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\13feb7ee-fbca-4120-bd92-005bf926c7d1.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\13feb7ee-fbca-4120-bd92-005bf926c7d1.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\2b7eec91-db3c-4f9d-bd60-d300398698db.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\2b7eec91-db3c-4f9d-bd60-d300398698db.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\2b7eec91-db3c-4f9d-bd60-d300398698db.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\538932ac-4b1d-4c00-8352-cba908518389.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\538932ac-4b1d-4c00-8352-cba908518389.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\538932ac-4b1d-4c00-8352-cba908518389.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\57c6315b-98f6-4693-a657-e5ff32b6c065.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\57c6315b-98f6-4693-a657-e5ff32b6c065.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\57c6315b-98f6-4693-a657-e5ff32b6c065.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\57da5e4f-a078-4dec-97a5-6c83e8f03533.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\57da5e4f-a078-4dec-97a5-6c83e8f03533.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\57da5e4f-a078-4dec-97a5-6c83e8f03533.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\8f63b0c7-a83b-4e62-8406-c438852db584.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\8f63b0c7-a83b-4e62-8406-c438852db584.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\8f63b0c7-a83b-4e62-8406-c438852db584.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\9e415749-4abe-4259-812d-2a4c1425680c.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\9e415749-4abe-4259-812d-2a4c1425680c.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\9e415749-4abe-4259-812d-2a4c1425680c.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\a5de4017-4ed4-4217-bd3c-df8164aa7ee1.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\a5de4017-4ed4-4217-bd3c-df8164aa7ee1.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\a5de4017-4ed4-4217-bd3c-df8164aa7ee1.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\a6150612-6dbe-4d7d-8229-e4cc758bcad2.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\a6150612-6dbe-4d7d-8229-e4cc758bcad2.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\a6150612-6dbe-4d7d-8229-e4cc758bcad2.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\d8c1f5d0-0182-4bea-8160-7d784d724f52.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\d8c1f5d0-0182-4bea-8160-7d784d724f52.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\d8c1f5d0-0182-4bea-8160-7d784d724f52.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\de4af534-332f-4652-9e66-fa6594e66b73.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\de4af534-332f-4652-9e66-fa6594e66b73.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\de4af534-332f-4652-9e66-fa6594e66b73.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\imgPortada\\f38be617-07ed-4724-a336-cdf8a5749a1c.jpg",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\imgPortada\\f38be617-07ed-4724-a336-cdf8a5749a1c.jpg",
       "PackagePath": "staticwebassets\\imgPortada\\f38be617-07ed-4724-a336-cdf8a5749a1c.jpg"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\CodeXD\\Desktop\\Mio\\Projects\\Biblioteca\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\luzes\\OneDrive\\Escritorio\\clonado\\Biblioteca\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Biblioteca.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Biblioteca.Microsoft.AspNetCore.StaticWebAssets.props",

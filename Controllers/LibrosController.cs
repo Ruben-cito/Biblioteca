@@ -30,7 +30,12 @@ namespace Biblioteca.Controllers
         // GET: Libros
         public async Task<IActionResult> Index()
         {
-            var libros = await _context.Libros.Include(p => p.Autor).Include(p => p.Categoria).Include(p => p.Editorial).ToListAsync();
+            var libros = await _context.Libros
+                .Include(p => p.Autor)
+                .Include(p => p.Categoria)
+                .Include(p => p.Editorial)
+                .Where(p => p.Ejemplares > 0)
+                .ToListAsync();
            
             return View(libros);
 

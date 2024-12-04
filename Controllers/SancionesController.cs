@@ -78,8 +78,11 @@ namespace Biblioteca.Controllers
                 PersonaId = PersonaId
             };
             var prestamo = await _context.Prestamos.FindAsync(PrestamoId);
-            prestamo!.Estado = "SANCION";
+            prestamo!.Estado = "DEVUELTO";
+            var libro = await _context.Libros.FindAsync(prestamo.LibroId);
+            libro.Ejemplares = libro.Ejemplares + 1;
             _context.Update(prestamo);
+            _context.Update(libro);
             _context.Add(sancion);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Prestamos");

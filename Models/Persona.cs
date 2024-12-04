@@ -39,6 +39,9 @@ namespace Biblioteca.Models
 
         [NotMapped]
         public string? NombreCompleto { get { return $"{Paterno} {Materno} {Nombre}"; } }
+        
+        [NotMapped]
+        public string? CINombre { get { return $"{Codigo} - {Paterno} {Materno} {Nombre}"; } }
 
         public virtual List<Prestamo>? Prestamos { get; set; }
         public virtual List<Sancion>? Sanciones { get; set; }

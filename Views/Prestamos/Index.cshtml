@@ -44,20 +44,22 @@
     <tbody>
         @foreach (var item in Model)
         {
-            string rowClass = item.Estado switch
+            var rowClass = item.Estado switch
             {
-                "PENDIENTE" => "table-warning",
+                "RESERVADO" => "table-warning",
                 "PRESTADO" => "table-info",
                 "DEVUELTO" => "table-success",
-                "SANCION" => "table-danger",
                 _ => ""
             };
+            if (item.DiasDesdePrestamo > 3) {
+                rowClass = "table-danger";
+            }
             
             <tr class="@rowClass">
                 <th>@item.Id</th>
                 <td>@Html.DisplayFor(modelItem => item.Fechaprestamo)</td>
                 <td>
-                    @if (item.Estado == "PENDIENTE")
+                    @if (item.Estado == "RESERVADO")
                     {
                         <p>-</p>
                     }
@@ -67,9 +69,9 @@
                     }
                 </td>
                 <td>
-                    @if (item.Estado == "PENDIENTE" || item.Estado == "PRESTADO")
+                    @if (item.Estado == "RESERVADO" || item.Estado == "PRESTADO")
                     {
-                        <p>-</p>
+                        <p>@item.DiasDesdePrestamo dias</p>
                     }
                     else
                     {
@@ -85,7 +87,7 @@
                 }
                 <td>
                     @if(User.IsInRole("Administrador") || User.IsInRole("Usuario")) {
-                        @if(item.Estado == "PENDIENTE") {
+                        @if(item.Estado == "RESERVADO") {
                             <form asp-action="ConfirmarPrestamo" asp-controller="Prestamos" method="post">
                                 <input name="id" value="@item.Id" type="hidden">
                                 <button type="submit" class="btn btn-outline-info" data-toggle="tooltip" data-placement="top" title="Confirmar prestamo">
@@ -93,19 +95,22 @@
                                 </button>
                             </form>
                         }
-                        @if(item.Estado == "PRESTADO") {
+                        @if(item.Estado == "PRESTADO" && item.DiasDesdePrestamo <= 3) {
                             <form asp-action="ConfirmarDevolucion" asp-controller="Prestamos" method="post">
                                 <input name="id" value="@item.Id" type="hidden">
                                 <button type="submit" class="btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Confirmar devolucion">
                                     <i class="bi bi-check-all"></i>
                                 </button>
                             </form>
+                            
+                        }
+                        @if(item.DiasDesdePrestamo > 3) {
                             <a asp-action="CrearSancion" asp-controller="Sanciones" asp-route-id="@item.Id" class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Crear sancion">
                                 <i class="bi bi-ban"></i>
                             </a>
                         }
                     }
-                    @if(item.Estado == "PENDIENTE") {
+                    @if(item.Estado == "RESERVADO") {
                         <button class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Cancelar prestamo" asp-action="Delete" asp-route-id="@item.Id">
                             <i class="bi bi-trash"></i>
                         </button>

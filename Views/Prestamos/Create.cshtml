@@ -4,68 +4,71 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Prestamo</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<form asp-action="Create">
+    <div class="row">
+        <div class="col col-6 p-2">
             <div class="form-group">
-                <label asp-for="Fechaprestamo" class="control-label"></label>
-                <input asp-for="Fechaprestamo" class="form-control" />
-                <span asp-validation-for="Fechaprestamo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Fechadevolucion" class="control-label"></label>
-                <input asp-for="Fechadevolucion" class="form-control" />
-                <span asp-validation-for="Fechadevolucion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaConfirmacion" class="control-label"></label>
-                <input asp-for="FechaConfirmacion" class="form-control" />
-                <span asp-validation-for="FechaConfirmacion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Estado" class="control-label"></label>
-                <input asp-for="Estado" class="form-control" />
-                <span asp-validation-for="Estado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Libro" class="control-label"></label>
-
-                <!--llamer al filtro-->
-                @* <input asp-for="LibroId" class="form-control" /> *@
-
-                <select asp-for="LibroId" class="form-control" asp-items="ViewBag.Libros">
-                    <option value="">Selecionar libro</option>
-
-                </select>
-               
-                <span asp-validation-for="LibroId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Persona" class="control-label"></label>
-                <!--lamar filtro-->
-                @* <input asp-for="PersonaId" class="form-control" /> *@
-                <select asp-for="PersonaId" class="form-control" asp-items="ViewBag.Personas ">
-                    <option value="">Selecionar Lector</option>
-
+                <label for="PersonaId">Seleccionar Lector</label>
+                <select asp-for="PersonaId" class="form-control" asp-items="ViewBag.Personas" id="PersonaId">
+                    <option value="">Seleccionar Lector</option>
                 </select>
                 <span asp-validation-for="PersonaId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+
+        <!-- <div class="col col-6 p-2">
+            <div id="lectorInfo" class="border p-3">
+                <p><strong>Nombre:</strong> <span id="lectorNombre"></span></p>
+                <p><strong>CI:</strong> <span id="lectorCi"></span></p>
             </div>
-        </form>
+        </div> -->
+
+        <div class="col col-6 p-2">
+            <div class="form-group">
+                <label for="LibroId">Seleccionar Libro</label>
+                <select asp-for="LibroId" class="form-control" asp-items="ViewBag.Libros" id="LibroId">
+                    <option value="">Seleccionar libro</option>
+                </select>
+                <span asp-validation-for="LibroId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group d-flex justify-content-end">
+            <div>
+                <a class="btn btn-outline-secondary" asp-action="Index">Cancelar</a>
+            </div>
+            <input type="submit" value="Registrar Prestamo" class="btn btn-outline-success" />
+        </div>
     </div>
-</div>
+</form>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<!-- @section Scripts {
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    <script>
+        $(document).ready(function () {
+            $('#PersonaId').change(function () {
+                var lectorId = $(this).val();
+                if (lectorId) {
+                    $.ajax({
+                        url: '@Url.Action("ObtenerLector", "Prestamos")',
+                        type: 'GET',
+                        data: { id: lectorId },
+                        success: function (data) {
+                            console.log("llegue aqui")
+                            // Actualiza los datos del lector en la interfaz
+                            $('#lectorNombre').text(data.NombreCompleto || 'N/A');
+                            $('#lectorCi').text(data.Codigo || 'N/A');
+                        },
+                        error: function () {
+                            alert('No se pudieron obtener los datos del lector.');
+                        }
+                    });
+                } else {
+                    // Limpia los datos si no hay lector seleccionado
+                    $('#lectorNombre').text('');
+                    $('#lectorCi').text('');
+                }
+            });
+        });
+    </script>
+} -->

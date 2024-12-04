@@ -64,12 +64,24 @@ namespace Biblioteca.Controllers
             return View(prestamo);
         }
 
+        // [HttpGet]
+        // public JsonResult ObtenerLector(int id)
+        // {
+        //     Console.WriteLine(id);
+        //     var lector = _context.Personas.FirstOrDefault(p => p.Id == id);
+        //     // var lector = _context.Personas.ToList();
+        //     Console.WriteLine("Lector", lector);
+
+        //     // Devuelve los datos del lector como JSON
+        //     return Json();
+        // }
+
         // GET: Prestamos/Create
         public IActionResult Create()
         {
-            ViewData["Libros"] = new SelectList(_context.Libros, "Id", "Titulo");
+            ViewData["Libros"] = new SelectList(_context.Libros.Where(p => p.Ejemplares > 0), "Id", "Titulo");
        
-            ViewData["Personas"] = new SelectList(_context.Personas.Where(D => D.Cargo == Dto.CargoEnum.Lector), "Id", "Nombre");
+            ViewData["Personas"] = new SelectList(_context.Personas.OrderBy(p => p.Codigo).Where(D => D.Cargo == Dto.CargoEnum.Lector), "Id", "CINombre");
             return View();
         }
 
@@ -80,9 +92,15 @@ namespace Biblioteca.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Fechaprestamo,Fechadevolucion,FechaConfirmacion,Estado,LibroId,PersonaId")] Prestamo prestamo)
         {
+            prestamo.Fechaprestamo = DateTime.Now;
+            prestamo.FechaConfirmacion = DateTime.Now;
+            prestamo.Fechadevolucion = DateTime.Now;
+            prestamo.Estado = "PRESTADO";
             if (ModelState.IsValid)
             {
-
+                var libro = await _context.Libros.FindAsync(prestamo.LibroId);
+                libro.Ejemplares = libro.Ejemplares - 1;
+                _context.Update(libro);
 
                 _context.Add(prestamo);
                 await _context.SaveChangesAsync();
@@ -98,7 +116,7 @@ namespace Biblioteca.Controllers
             var prestamo = new Prestamo();
             prestamo.LibroId = LibroId;
             prestamo.PersonaId = PersonaId;
-            prestamo.Estado = "PENDIENTE";
+            prestamo.Estado = "RESERVADO";
             prestamo.Fechaprestamo = DateTime.Now;
             prestamo.Fechadevolucion = DateTime.Now;
             prestamo.FechaConfirmacion = DateTime.Now;
@@ -165,6 +183,9 @@ namespace Biblioteca.Controllers
             }
             prestamo.Fechadevolucion = DateTime.Now;
             prestamo.Estado = "DEVUELTO";
+            var libro = await _context.Libros.FindAsync(prestamo.LibroId);
+            libro.Ejemplares = libro.Ejemplares + 1;
+            _context.Update(libro);
             _context.Update(prestamo);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Prestamos");
@@ -188,6 +209,9 @@ namespace Biblioteca.Controllers
             }
             prestamo.Fechaprestamo = DateTime.Now;
             prestamo.Estado = "PRESTADO";
+            var libro = await _context.Libros.FindAsync(prestamo.LibroId);
+            libro.Ejemplares = libro.Ejemplares - 1;
+            _context.Update(libro);
             _context.Update(prestamo);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Prestamos");
