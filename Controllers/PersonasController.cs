@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Biblioteca.Contexto;
 using Biblioteca.Models;
+using Biblioteca.Dto;
 
 namespace Biblioteca.Controllers
 {
@@ -41,6 +42,26 @@ namespace Biblioteca.Controllers
             }
 
             return View(persona);
+        }
+
+        public async Task<IActionResult> ImprimirHistorial(int id)
+        {
+            var prestamos = await _context.Prestamos
+                .Include(p => p.Libro)
+                .Include(p => p.Persona)
+                .Where(p => p.PersonaId == id)
+                .ToListAsync();
+            var sanciones = await _context.Sanciones
+                .Where(p => p.PersonaId == id)
+                .ToListAsync();
+            var persona = await _context.Personas
+                .FindAsync(id);
+            var model = new HistorialLector {
+                Prestamos = prestamos,
+                Sanciones = sanciones,
+                Persona = persona
+            };
+            return View(model);
         }
 
         // GET: Personas/Create
@@ -137,6 +158,24 @@ namespace Biblioteca.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(persona);
+        }
+
+        public async Task<IActionResult> Restaurar(int? id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+            var persona = await _context.Personas
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if(persona != null)
+            {
+                persona.Intentos = 0;
+                persona.Estado = "ACTIVO";
+                _context.Update(persona);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Personas/Delete/5

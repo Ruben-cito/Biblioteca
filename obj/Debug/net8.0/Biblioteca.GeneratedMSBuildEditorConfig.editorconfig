@@ -17,217 +17,235 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Biblioteca
 build_property.RootNamespace = Biblioteca
-build_property.ProjectDir = C:\Users\luzes\OneDrive\Escritorio\clonado\Biblioteca\
+build_property.ProjectDir = C:\Users\CodeXD\Desktop\Mio\Projects\Biblioteca\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\luzes\OneDrive\Escritorio\clonado\Biblioteca
+build_property.MSBuildProjectDirectory = C:\Users\CodeXD\Desktop\Mio\Projects\Biblioteca
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Autores/Create.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Autores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Autores/Delete.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Autores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Autores/Details.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Autores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Autores/Edit.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Autores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Autores/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Autores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Categorias/Create.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Categorias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Categorias/Delete.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Categorias/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Categorias/Details.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Categorias/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Categorias/Edit.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Categorias/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Categorias/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Categorias/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Datos/Create.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Datos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Datos/Delete.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Datos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0b3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Datos/Details.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Datos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0b3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Datos/Edit.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Datos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Datos/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Datos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Editoriales/Create.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Editoriales/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9yaWFsZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Editoriales/Delete.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Editoriales/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9yaWFsZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Editoriales/Details.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Editoriales/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9yaWFsZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Editoriales/Edit.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Editoriales/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9yaWFsZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Editoriales/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Editoriales/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9yaWFsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Home/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Home/Privacy.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Libros/Create.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Libros/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Libros/Delete.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Libros/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Libros/Details.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Libros/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Libros/Edit.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Libros/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Libros/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Libros/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Login/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Libros/ReporteSolicitados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXFJlcG9ydGVTb2xpY2l0YWRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Personas/Create.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Personas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Personas/Delete.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Personas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Personas/Details.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Personas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Personas/Edit.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Personas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Personas/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Personas/ImprimirHistorial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcSW1wcmltaXJIaXN0b3JpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Personas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Personas/LectorHome.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Personas/LectorHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcTGVjdG9ySG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Prestamos/CrearReserva.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Prestamos/CrearReserva.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXENyZWFyUmVzZXJ2YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Prestamos/Create.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Prestamos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Prestamos/Delete.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Prestamos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Prestamos/Details.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Prestamos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Prestamos/Edit.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Prestamos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Prestamos/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Prestamos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Sanciones/CrearSancion.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Prestamos/LibrosDevueltosPdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXExpYnJvc0RldnVlbHRvc1BkZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Prestamos/PrestamosRealizadosPdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXFByZXN0YW1vc1JlYWxpemFkb3NQZGYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Prestamos/ReservacionesPdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXFJlc2VydmFjaW9uZXNQZGYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Sanciones/CrearSancion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuY2lvbmVzXENyZWFyU2FuY2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Sanciones/Create.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Sanciones/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuY2lvbmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Sanciones/Delete.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Sanciones/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuY2lvbmVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Sanciones/Details.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Sanciones/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuY2lvbmVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Sanciones/Edit.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Sanciones/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuY2lvbmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Sanciones/Index.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Sanciones/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuY2lvbmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Shared/Error.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/_ViewImports.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/_ViewStart.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luzes/OneDrive/Escritorio/clonado/Biblioteca/Views/Shared/_Layout.cshtml]
+[C:/Users/CodeXD/Desktop/Mio/Projects/Biblioteca/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bunr9m1pqn

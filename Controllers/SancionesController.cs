@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Biblioteca.Contexto;
 using Biblioteca.Models;
 using Biblioteca.Dto;
+using System.Security.Claims;
 
 namespace Biblioteca.Controllers
 {
@@ -23,7 +24,24 @@ namespace Biblioteca.Controllers
         // GET: Sanciones
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Sanciones.ToListAsync());
+            if(User.IsInRole("Lector")) {
+                var id = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+                var sancionesLector = await _context.Sanciones
+                .Include(x => x.Persona)
+                .Include(x => x.Prestamo)
+                .Include(x => x.Prestamo!.Libro)
+                .Where(x => x.PersonaId == id)
+                .ToListAsync();
+                return View(sancionesLector);
+            }
+            else
+            return View(
+                await _context.Sanciones
+                .Include(x => x.Persona)
+                .Include(x => x.Prestamo)
+                .Include(x => x.Prestamo!.Libro)
+                .ToListAsync()
+            );
         }
 
         // GET: Sanciones/Details/5
@@ -80,7 +98,7 @@ namespace Biblioteca.Controllers
             var prestamo = await _context.Prestamos.FindAsync(PrestamoId);
             prestamo!.Estado = "DEVUELTO";
             var libro = await _context.Libros.FindAsync(prestamo.LibroId);
-            libro.Ejemplares = libro.Ejemplares + 1;
+            libro!.Ejemplares = libro.Ejemplares + 1;
             _context.Update(prestamo);
             _context.Update(libro);
             _context.Add(sancion);

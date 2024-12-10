@@ -2,24 +2,31 @@
 
 @{
     ViewData["Title"] = "Index";
+    var index = 1;
 }
 
 <div class="row">
     <div class="col col-3">
         <h1>Prestamos</h1>
     </div>
-    <div class="col auto">
+    <div class="col col-9">
         @if (User.IsInRole("Administrador") || User.IsInRole("Usuario"))
         {
-            <p>
-                <a class="btn btn-outline-success outline" asp-action="Create">Create New</a>
-            </p>
-        }
-        @if (User.IsInRole("Lector"))
-        {
-            <p>
-                <a class="btn btn-outline-success" asp-action="CrearReserva">Crear Reserva</a>
-            </p>
+            <div class="row d-flex justify-content-between">
+                <div class="col col-6">
+                    <a class="btn btn-outline-success outline" asp-action="Create">Crear Reserva</a>
+                </div>
+                <div class="col col-6 d-flex justify-content-end">
+                    <select id="reportSelect" class="form-select me-2" onchange="navigateToReport()">
+                        <option value="" selected disabled>Generar reporte</option>
+                        <option value="/Prestamos/ReservacionesPdf">Reservaciones</option>
+                        <option value="/Prestamos/PrestamosRealizadosPdf">Préstamos realizados</option>
+                        <option value="/Prestamos/LibrosDevueltosPdf">Libros devueltos</option>
+                    </select>
+
+                </div>
+
+            </div>
         }
     </div>
 </div>
@@ -51,12 +58,13 @@
                 "DEVUELTO" => "table-success",
                 _ => ""
             };
-            if (item.DiasDesdePrestamo > 3) {
+
+            if (item.DiasDesdePrestamo > 3 && item.Estado == "PRESTADO") {
                 rowClass = "table-danger";
             }
             
             <tr class="@rowClass">
-                <th>@item.Id</th>
+                <th>@index</th>
                 <td>@Html.DisplayFor(modelItem => item.Fechaprestamo)</td>
                 <td>
                     @if (item.Estado == "RESERVADO")
@@ -107,7 +115,7 @@
                             </form>
                             
                         }
-                        @if(item.DiasDesdePrestamo > 3) {
+                        @if(item.DiasDesdePrestamo > 3 && item.Estado == "PRESTADO") {
                             <a asp-action="CrearSancion" asp-controller="Sanciones" asp-route-id="@item.Id" class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Crear sancion">
                                 <i class="bi bi-ban"></i>
                             </a>
@@ -120,6 +128,23 @@
                     }
                 </td>
             </tr>
+            index++;
         }
     </tbody>
 </table>
+@section scripts {
+    <script>
+        function navigateToReport() {
+    const reportUrl = document.getElementById("reportSelect").value;
+
+    if (!reportUrl) {
+        alert("Por favor, selecciona un tipo de reporte.");
+        return;
+    }
+
+    // Redirigir al usuario a la URL seleccionada
+    window.location.href = reportUrl;
+}
+
+    </script>
+}

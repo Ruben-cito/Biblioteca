@@ -2,52 +2,47 @@
 
 @{
     ViewData["Title"] = "Index";
+    var index = 1;
 }
 
 <h1>Sanciones</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Montototal)
-            </th>
+            <th>N°</th>
+            @if(User.IsInRole("Administrador") || User.IsInRole("Usuario")) {
+                <th>Lector</th>
+            }
+            <th>Libro</th>
+            <th>Monto sancion</th>
+            <th>Fecha sancion</th>
             <th>
                 @Html.DisplayNameFor(model => model.Motivo)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PersonaId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PrestamoId)
-            </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>@index</td>
+            @if(User.IsInRole("Administrador") || User.IsInRole("Usuario")) {
+                <td>
+                    @Html.DisplayFor(modelItem => item.Persona!.NombreCompleto)
+                </td>
+            }
+            <td>
+                @Html.DisplayFor(modelItem => item.Prestamo!.Libro!.Titulo)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Montototal)
             </td>
+            <td>@item.Prestamo!.Fechadevolucion</td>
             <td>
                 @Html.DisplayFor(modelItem => item.Motivo)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PersonaId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrestamoId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
         </tr>
+        index++;
 }
     </tbody>
 </table>

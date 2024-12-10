@@ -34,9 +34,17 @@ namespace Biblioteca.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(string correo, string password)
         {
+            var user = await _context.Personas.Where(x => x.Correo == correo).FirstOrDefaultAsync();
+            if (user != null && user.Password != password) {
+                user.Intentos = user.Intentos + 1;
+                if(user.Intentos >= 3)
+                    user.Estado = "BLOQUEADO";
+            _context.Update(user);
+            await _context.SaveChangesAsync();
+            }
             //consultas landa con variable Persona para verificar los datos de correo y password que esta recibiendo
             var Persona = await _context.Personas
-                .Where(x => x.Correo == correo && x.Password == password)
+                .Where(x => x.Correo == correo && x.Password == password && x.Estado == "ACTIVO")
                 .FirstOrDefaultAsync();
             //para verificar si existen los datos en la base de datos con la variable Persona
             if (Persona == null)
@@ -50,7 +58,7 @@ namespace Biblioteca.Controllers
                 if (Persona.Cargo == Dto.CargoEnum.Administrador)
                     return RedirectToAction("Index", "Libros");
                 else if (Persona.Cargo == Dto.CargoEnum.Usuario)
-                    return RedirectToAction("index", "Datos");
+                    return RedirectToAction("index", "Libros");
                 else
                     return RedirectToAction("Index", "Libros", new { id = Persona.Id });    
             }

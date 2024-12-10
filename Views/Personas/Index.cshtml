@@ -7,7 +7,7 @@
 <h1>Personas</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-success" asp-action="Create">Registrar persona</a>
 </p>
 <table class="table">
     <thead>
@@ -25,21 +25,12 @@
                 @Html.DisplayNameFor(model => model.Correo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Cargo)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Estado)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Codigo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Intentos)
-            </th>
-            <th></th>
+            <th>Opciones</th>
         </tr>
     </thead>
     <tbody>
@@ -58,24 +49,27 @@
                 @Html.DisplayFor(modelItem => item.Correo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Cargo)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Estado)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Codigo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Intentos)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-primary" asp-action="ImprimirHistorial" asp-route-id="@item.Id"  data-toggle="tooltip" data-placement="top" title="Ver historial">
+                    <i class="bi bi-file-pdf"></i>
+                </a> 
+                @if(item.Estado == "BLOQUEADO" && User.IsInRole("Administrador"))
+                {
+                    <a class="btn btn-success" asp-action="Restaurar" asp-route-id="@item.Id"  data-toggle="tooltip" data-placement="top" title="Restaurar usuario">
+                        <i class="bi bi-person-fill-lock"></i>
+                    </a> 
+                }
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"  data-toggle="tooltip" data-placement="top" title="Editar usuario">
+                    <i class="bi bi-pencil-square"></i>
+                </a> 
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"  data-toggle="tooltip" data-placement="top" title="Eliminar usuario">
+                    <i class="bi bi-trash"></i>
+                </a>
             </td>
         </tr>
 }

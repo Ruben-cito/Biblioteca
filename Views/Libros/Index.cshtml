@@ -11,10 +11,19 @@
     </div>
     @if(User.IsInRole("Administrador"))
     {
-        <div class="col col-6">
-            <a asp-action="Create" class="btn btn-success">
-                <i class="bi bi-plus-square"> Agregar nuevo libro</i>
-            </a>
+        <div class="col col-10">
+            <div class="row d-flex justify-content-between">
+                <div class="col col-6">
+                    <a asp-action="Create" class="btn btn-success">
+                        <i class="bi bi-plus-square"> Agregar nuevo libro</i>
+                    </a>
+                </div>
+                <div class="col col-6 d-flex justify-content-end">
+                    <a asp-action="ReporteSolicitados" class="btn btn-primary">
+                        <i class="bi bi-file-pdf"> Reporte de Libros mas solicitados </i>
+                    </a>
+                </div>
+            </div>
         </div>
     }
 </div>

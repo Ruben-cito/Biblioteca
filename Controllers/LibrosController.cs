@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Biblioteca.Contexto;
 using Biblioteca.Models;
 using Microsoft.VisualBasic;
+using Biblioteca.Dto;
 
 namespace Biblioteca.Controllers
 {
@@ -25,7 +26,23 @@ namespace Biblioteca.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-
+        public async Task<IActionResult> ReporteSolicitados(int id)
+        {
+            var libros = await _context.Prestamos
+            .GroupBy(p => p.Libro!.Titulo)
+            .Select(g => new LibroX
+            {
+                Titulo = g.Key,
+                Cantidad = g.Count()
+            })
+            .OrderByDescending(x => x.Cantidad)
+            .ToListAsync();
+            var reporte = new ReporteLibros
+            {
+                Libros = libros
+            };
+            return View(reporte);
+        }
 
         // GET: Libros
         public async Task<IActionResult> Index()

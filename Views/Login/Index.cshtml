@@ -14,15 +14,12 @@
 </head>
 <body>
 
-<div class="container">
-
-        <div class="row">
+<div class="container ">
+        <div class="row d-flex justify-content-center">
             <!--columna 1-->
-            <div class="col-6">
-                imagen
-            </div>
             <!--columna 2-->
-            <div class="col-6">
+    <h1>Ingreso al sistema</h1>
+            <div class="col d-flex align-items-center">
 
                 <!--pegar codigo para el formulario de login -->
                 <form asp-controller="Login" asp-action="Login" method="post">
@@ -30,7 +27,7 @@
                         <label for="usuario" class="form-label">Usuario Email</label>
            <!--el name tiene k coincidir con el valor que esta recibiendo la clase login controller en la funcion Login-->
                         <input type="email" class="form-control" id="usuario" name="correo">
-                        <div id="emailHelp" class="form-text"> no compartiremos tu informaion con nadie.</div>
+                        <div id="emailHelp" class="form-text"> no compartiremos tu informacion con nadie.</div>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
